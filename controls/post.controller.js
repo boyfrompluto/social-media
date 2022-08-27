@@ -13,7 +13,7 @@ const createNewPost = async(req,res)=>{
             image:imagePost
         })
         const savedPost =await post.save();
-        res.status(200).json(`post created \n ${savedPost}`)
+        res.status(200).json(`post created. \n ${savedPost}`)
 };
 const likePost= async (req,res)=>{
     const ID= req.decode._id;
